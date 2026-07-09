@@ -62,3 +62,11 @@ echo "Top 5 CPU Consuming Processes"
 ps -eo pid,comm,%cpu,%mem --sort=-%cpu | head -6
 
 echo ""
+
+# =====================================
+# End of Report
+# =====================================
+
+echo "System monitoring completed."
+
+echo "$(date): System monitoring completed successfully." >> "$LOG_FILE"
