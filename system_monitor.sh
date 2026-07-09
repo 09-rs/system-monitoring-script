@@ -52,3 +52,13 @@ else
 fi
 
 echo ""
+
+# =====================================
+# Top CPU Consuming Processes
+# =====================================
+
+echo "Top 5 CPU Consuming Processes"
+
+ps -eo pid,comm,%cpu,%mem --sort=-%cpu | head -6
+
+echo ""
